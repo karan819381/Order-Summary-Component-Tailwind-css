@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              PaleBlue: " #E0E8FF",
+              BrightBlue: "#3829E0",
+              VeryPaleBlue: "#F5F7FF",
+              DesaturatedBlue: "#7280A7",
+              DarkBlue: "#1F2F56",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="w-full h-screen bg-cover bg-center flex justify-center items-center flex-col"
+    style="background-image: url('./images/pattern-background-desktop.svg')"
+  >
+    <main
+      class="w-[28rem] bg-[#fff] rounded-xl flex flex-col items-center justify-center shadow-xl "
+    >
+      <section class="w-full">
+        <img
+          class="w-full rounded-t-xl"
+          src="./images/illustration-hero.svg"
+          alt="hero"
+        />
+      </section>
+      <section class="text-center px-12">
+        <h1 class="font-extrabold text-DarkBlue text-3xl my-5">
+          Order Summary
+        </h1>
+        <p class="text-DesaturatedBlue px-5 text-center">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+
+        <!-- pay Area -->
+
+        <section class="flex items-center justify-between my-8">
+          <section class="flex items-center text-DesaturatedBlue">
+            <img class="pl-7 pr-4" src="./images/icon-music.svg" alt="icon-music" />
+             <section><strong
+              class="text-DarkBlue text-md flex flex-row"
+              >Annual Plan</strong
+            >$59.99/year</section>
+            
+          </section>
+          <a class="text-BrightBlue underline font-bold hover:text-[#665FC3]" href="#">Change</a>
+        </section>
+
+        <button
+          class="w-full p-3 bg-BrightBlue text-PaleBlue rounded-xl shadow-lg hover:bg-[#665FC3]"
+        >
+          Proceed to Payment
+        </button>
+        <button class="my-7 text-DesaturatedBlue font-bold hover:text-DarkBlue">
+          Cancel Order
+        </button>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
